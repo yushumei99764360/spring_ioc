@@ -15,6 +15,7 @@ public class TestDb {
         System.out.println(connection);
 
         try {
+            //
             PreparedStatement ps = connection.prepareStatement("select * from userinfo");
             ResultSet rs = ps.executeQuery();
             while (rs.next()) {
